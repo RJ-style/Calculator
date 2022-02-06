@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title id="title">Calcuathor</title>
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="Calculator.css"
+      />
+   </head>
+
+   <body>
+      <div id="head">
+         <h1 id="header" contenteditable="false">The Calculathor</h1>
+      </div>      <br />
+      <div class="input">
+         <div id="input">
+            <span id="operand1">Enter operand 1: </span>
+            <input
+               type="number"
+               list=""
+               value="0"
+               name="input"
+               id="inputnumber1"
+            /><br /><br />
+            <span id="operand2">Enter operand 2:</span>
+            <input
+               type="number"
+               list=""
+               name="input"
+               value="0"
+               id="inputnumber2"
+            />
+         </div>
+         <br />
+         <div id="buttons" contenteditable="false">
+            <button type="button" class="button" id="+">+</button>
+            <button type="button" class="button" id="-">-</button>
+            <button type="button" class="button" id="*">*</button>
+            <button type="button" class="button" id="/">/</button>
+         </div>
+      </div>
+      <div id="output">
+         <p id="Calculationdescription"></p>
+         <output class="output"
+            >Result: <span id="current-result">0</span></output
+         >
+      </div>
+   </body>
+   <script src="Calculator.js"></script>
+</html>
